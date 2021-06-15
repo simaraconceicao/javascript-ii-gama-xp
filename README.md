@@ -209,6 +209,8 @@ PWA são diferentes de aplicativos nativos, pois eles não podem ser encontrados
 
 Mas por outro lado, dá pr acessar de offline e ainda usar algumas caracteristicas como por exemplo o push notification.
 
+Dá pra construir PWA com Angular, React, Vue, Ionic entre outros.
+
 6.3 WebComponents
 
 Os Web Components são uma forma de criar componentes reutilizáveis para a Web nativamente, utilizando apenas HTML, CSS e JavaScript. E carregam os benefícios de códigos menores, modulares e reutilizáveis.
@@ -219,6 +221,7 @@ Os Web Components possuem quatro fundamentos:
 - HTML Templates: Permite declarar fragmentos de HTML para serem utilizados como modelo. Eles não são renderizados pelo navegador.
 - HTML Imports: Permite importar páginas HTML completas, incluindo o JavaScript e CSS embutidos nelas.
 
+Você pode usar o stencilJS que faz parte do Ionic Framework.
 ---
 ## Simara Conceição
 - [instagram](https://www.instagram.com/simara_conceicao)
