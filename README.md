@@ -51,7 +51,7 @@ em vez de:
 if(x % 2 === 0) {
     return 'Par'
 } else {
-    retunr 'Impar'
+    return 'Impar'
 }
 
 use: 
