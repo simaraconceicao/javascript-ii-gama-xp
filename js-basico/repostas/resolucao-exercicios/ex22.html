@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Execício2</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <meta charset="utf-8">
+    </head>
+
+    <body>
+        <script lang="javascript">
+
+            /* Vamos criar uma conta bancária com as 3 operações básicas?
+            a) A conta deverá iniciar com o saldo de 100
+            b) Deverá ser possível escolher uma operação em forma de string: 'depositar',
+             'sacar', 'consultar saldo'
+            c) Deverá ser possível passar 1 valor para a operação escolhida
+            d) Deverá retornar o resultado e imprimir no console o saldo atual */ 
+
+            let saldo = 100;
+            let resultado;
+
+            let operacao = parseInt(window.prompt('Digite 1 (Depósitos); Digite 2 (Saques); Digite 3 (Consultar Saldo)'));
+            if (operacao === 1) {
+                let valordep = parseInt(window.prompt('Digite o valor para depósito: '));
+                resultado = 'Depósito' 
+                saldo = saldo + valordep;
+                document.writeln(`${resultado} <br>
+                Saldo Atual: R$ ${saldo.toFixed(2)}`)
+            } else if (operacao === 2) {
+                let valorsaq = parseInt(window.prompt('Digite o valor que deseja sacar: '));
+                resultado = 'Saque';
+                saldo = saldo - valorsaq;
+                document.writeln(`${resultado} <br>
+                Saldo Atual: R$ ${saldo.toFixed(2)}`);
+            } else if (operacao === 3) {
+                resultado = 'Consultar Saldo'
+                saldo = saldo
+                document.writeln(`${resultado} <br>
+                Saldo Atual: R$ ${saldo.toFixed(2)}`)
+            } else {
+                document.writeln('Operação não cadastrada!')
+            }
+
+        </script>
+    </body>
+</html>

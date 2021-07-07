@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Execício2</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <meta charset="utf-8">
+    </head>
+
+    <body>
+        <script lang="javascript">
+/*Vamos criar uma função que calcula o IMC de uma pessoa, dado a altura em m e a massa em kg.*/
+
+            let altura = parseFloat(window.prompt('Digite sua altura em metros'));
+            let peso = parseFloat(window.prompt('Digite seu peso em Kg'));
+
+            let imc = peso / (altura*altura);
+
+            document.writeln(`Seu IMC é: ${imc.toFixed(1)} kg/m²<br>`)
+            
+
+            if (imc > 16 && imc <16.9) {
+                document.writeln('Classificação: Muito abaixo do peso')
+            } else if (imc > 17 && imc <18.4) {
+                document.writeln('Classificação: Abaixo do peso')
+            } else if (imc > 18.5 && imc < 24.9) {
+                document.writeln('Classificação: Peso normal')
+            } else if (imc > 25 && imc < 29.9) {
+                document.writeln('Classificação: Acima do peso')
+            } else if (imc > 30 && imc <34.9) {
+                document.writeln('Classificação: Obesidade Grau I')
+            } else if (imc > 35 && imc <40) {
+                document.writeln('Classificação: Obesidade Grau II')
+            } else if (imc > 40) {
+                document.writeln('Classificação: Obesidade Grau III')
+            }    
+
+        </script>
+    </body>
+</html>
